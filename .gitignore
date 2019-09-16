@@ -1,0 +1,73 @@
+HELP.md
+target/
+.mvn/
+mvnw
+mvnw.cmd
+!**/src/main/**
+!**/src/test/**
+build/
+.gradle/
+gradle-app.setting
+_gsdata_/
+__*__.gradle
+__*__/
+__pycache__/
+python_test/.cache/
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.springWebflow
+.externalToolBuilders
+.eclipse-pmd
+.org.eclipse.*.prefs
+bin/
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+.idea_modules/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+
+### JIRA plugin ###
+atlassian-ide-plugin.xml
+
+
+### Crashlytics plugin (for Android Studio and IntelliJ)###
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+
+### VS Code ###
+.vscode/
+/bin/
+
+
+# Backup files
+# ---------------------------------------------------------------------
+*.bak
+
+
+# ---------------------------------------------------------------------
+# Logs
+# ---------------------------------------------------------------------
+*.log
