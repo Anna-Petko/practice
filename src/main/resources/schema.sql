@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS Organization(
 	is_active TINYINT default 1,
 	full_name VARCHAR(100) NOT NULL,
 	kpp VARCHAR(100) NOT NULL,
-	address VARCHAR(100) NOT NULL,
+	adress VARCHAR(100) NOT NULL,
 	phone VARCHAR(100)
 );
 COMMENT ON TABLE Organization IS 'Организация';
