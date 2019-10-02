@@ -9,3 +9,10 @@ CREATE TABLE IF NOT EXISTS Organization(
 	phone 		VARCHAR(100)
 );
 COMMENT ON TABLE Organization IS 'Организация';
+
+CREATE TABLE IF NOT EXISTS Documents(
+	id			INTEGER			NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    code 		VARCHAR(50) 	NOT NULL,
+    name 		VARCHAR(150) 	NOT NULL 
+);
+COMMENT ON TABLE Documents IS 'Тип документа';
