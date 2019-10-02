@@ -10,22 +10,30 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Organization")
 public class Organization {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	private Integer id;
+
 	@Column(name = "name")
 	private String name;
+
 	@Column(name = "inn")
 	private String inn;
+
 	@Column(name = "is_active")
 	private Integer isAtive;
+
 	@Column(name = "full_name")
 	private String fullName;
+
 	@Column(name = "kpp")
 	private String kpp;
+
 	@Column(name = "adress")
 	private String adress;
+
 	@Column(name = "phone")
 	private String phone;
 
