@@ -10,9 +10,9 @@ CREATE TABLE IF NOT EXISTS Organization(
 );
 COMMENT ON TABLE Organization IS 'Организация';
 
-CREATE TABLE IF NOT EXISTS Documents(
+CREATE TABLE IF NOT EXISTS Document(
 	id			INTEGER			NOT NULL PRIMARY KEY AUTO_INCREMENT,
     code 		VARCHAR(50) 	NOT NULL,
     name 		VARCHAR(150) 	NOT NULL 
 );
-COMMENT ON TABLE Documents IS 'Тип документа';
+COMMENT ON TABLE Document IS 'Тип документа';
