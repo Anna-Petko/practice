@@ -14,11 +14,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Document")
 public class Document {
-	
+
 	/**
 	 * id document
 	 */
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "Id", nullable = false)
