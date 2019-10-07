@@ -1,10 +1,10 @@
-INSERT INTO Organization (name, inn, is_active, full_name, kpp, adress, phone)
-	VALUES ('Egmond','123456789000',0,'OOO Egmond Publishing','123456789','Москва, ул. Ленина, д. 5','+78453488921');
+INSERT INTO Organization (name, inn, is_active, full_name, kpp, address, phone)
+	VALUES ('Egmond','123456789000',1,'OOO Egmond Publishing','123456789','Москва, ул. Ленина, д. 5','+78453488921');
   
-INSERT INTO Organization (name, inn, is_active, full_name, kpp, adress, phone)
-	VALUES ('Optimus','123456789111',1,'OOO Optimus AB','123456897','Москва, ул. Удальцова, д. 21','+78452655341');
+INSERT INTO Organization (name, inn, is_active, full_name, kpp, address, phone)
+	VALUES ('Optimus','123456789111',0,'OOO Optimus AB','123456897','Москва, ул. Удальцова, д. 21','+78452655341');
 
-INSERT INTO Organization (name, inn, is_active, full_name, kpp, adress, phone)
+INSERT INTO Organization (name, inn, is_active, full_name, kpp, address, phone)
 	VALUES ('ITConsulting','123456789555',1,'OOO ITConsulting','123456928','Москва, ул. Машкова, д. 2','+78452781883');
 	
 INSERT INTO Document (code, name)
@@ -40,4 +40,17 @@ INSERT INTO Country (name, code)
 	VALUES ('Греческая Республика', '300');
 INSERT INTO Country (name, code) 
 	VALUES ('Германия', '246');
+	
+INSERT INTO Office (name, address, phone, organization_id, is_active) 
+	VALUES ('Головной', 'Москва, ул. Ленина, д. 5', '+78453488921', 1, 1);
+INSERT INTO Office (name, address, phone, organization_id, is_active) 
+	VALUES ('Дополнительный', 'Москва, ул. Обручева, д. 25', '+78454567891', 2, 1);
+INSERT INTO Office (name, address, phone, organization_id, is_active) 
+	VALUES ('Головной', 'Москва, ул. Машкова, д. 2', '+78452781883', 3, 1);
+	
+	
+	
+	
+	
+
 	
