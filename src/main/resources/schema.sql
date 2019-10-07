@@ -35,3 +35,5 @@ CREATE TABLE IF NOT EXISTS Office(
    
 );
 COMMENT ON TABLE Office IS 'Офис';
+
+CREATE INDEX IX_Office_Organization_Id ON Office(organization_id);
