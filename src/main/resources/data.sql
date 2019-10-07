@@ -33,3 +33,11 @@ INSERT INTO Document (code, name)
 	VALUES ('24', 'Удостоверение личности военнослужащего Российской Федерации');
 INSERT INTO Document (code, name) 
 	VALUES ('91', 'Иные документы');
+	
+INSERT INTO Country (name, code) 
+	VALUES ('Российская Федерация', '643');
+INSERT INTO Country (name, code) 
+	VALUES ('Греческая Республика', '300');
+INSERT INTO Country (name, code) 
+	VALUES ('Германия', '246');
+	

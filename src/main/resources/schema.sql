@@ -16,3 +16,10 @@ CREATE TABLE IF NOT EXISTS Document(
     name 		VARCHAR(150) 	NOT NULL 
 );
 COMMENT ON TABLE Document IS 'Тип документа';
+
+CREATE TABLE IF NOT EXISTS Country(
+	id			INTEGER			NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name 		VARCHAR(50) 	NOT NULL,
+    code 		VARCHAR(50) 	NOT NULL 
+);
+COMMENT ON TABLE Country IS 'Страна';
