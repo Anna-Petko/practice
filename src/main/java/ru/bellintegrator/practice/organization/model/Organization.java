@@ -10,39 +10,49 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Organization")
 public class Organization {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@Column(name = "id", nullable = false)
 	private Integer id;
-	@Column(name = "name")
+
+	@Column(name = "name", length = 100, nullable = false)
 	private String name;
-	@Column(name = "inn")
+
+	@Column(name = "inn", length = 50, nullable = false)
 	private String inn;
-	@Column(name = "is_active")
+
+	@Column(name = "is_active",  nullable = false)
 	private Integer isAtive;
-	@Column(name = "full_name")
+
+	@Column(name = "full_name",length = 50, nullable = false)
 	private String fullName;
-	@Column(name = "kpp")
+
+	@Column(name = "kpp", length = 50, nullable = false)
 	private String kpp;
-	@Column(name = "adress")
-	private String adress;
-	@Column(name = "phone")
+
+	@Column(name = "address", length = 50, nullable = false)
+	private String address;
+
+	@Column(name = "phone", length = 50)
 	private String phone;
 
-
+	/*
+	 * Empty constructor for JPA
+	 */
 	public Organization() {
 
 	}
 
 	public Organization(String name, String inn, Integer isActive ,String fullName,String kpp, 
-			String adress,String phone) {
+			String address,String phone) {
 		this.name = name;
 		this.inn = inn;
 		this.inn = inn;
 		this.isAtive = isActive;
 		this.fullName = fullName;
 		this.kpp = kpp;
-		this.adress = adress;
+		this.address = address;
 		this.phone = phone;
 	}
 
@@ -71,7 +81,7 @@ public class Organization {
 	}
 
 	public String getAdress() {
-		return adress;
+		return address;
 	}
 
 	public String getPhone() {
@@ -99,12 +109,17 @@ public class Organization {
 		this.kpp = kpp;
 	}
 
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setAdress(String address) {
+		this.address = address;
 	}
 
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+
 	}
 
 }
